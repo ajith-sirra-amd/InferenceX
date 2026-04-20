@@ -3,7 +3,7 @@
   description:
     - "Add GLM5 MXFP4 (FP4) MI350X SGLang Support" 
     - "Container : lmsysorg/sglang-rocm:v0.5.10rc0-rocm700-mi35x-20260416"
-  pr-link: To be Added
+  pr-link: https://github.com/SemiAnalysisAI/InferenceX/pull/1098
 
 - config-keys:
     - kimik2.5-fp4-gb200-dynamo-trt
