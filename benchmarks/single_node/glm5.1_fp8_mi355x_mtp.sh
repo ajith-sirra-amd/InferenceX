@@ -36,8 +36,6 @@ fi
 # Start GPU monitoring (power, temperature, clocks every second)
 start_gpu_monitor
 
-pip install -U transformers
-
 python3 -m sglang.launch_server \
     --model-path $MODEL \
     --host=0.0.0.0 \
