@@ -1,7 +1,7 @@
 - config-keys:
     - glm5-fp8-mi355x-sglang-mtp
   description:
-    - "Add GLM5.1 FP8 MTP MI355X SGLang Support" 
+    - "Add GLM5 FP8 MTP MI355X SGLang Support" 
     - "Container : lmsysorg/sglang-rocm:v0.5.10rc0-rocm720-mi35x-20260415"
   pr-link: https://github.com/SemiAnalysisAI/InferenceX/pull/1122
 
