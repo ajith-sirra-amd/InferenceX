@@ -1758,6 +1758,15 @@
 
 
 - config-keys:
+    - qwen3.5-fp4-mi355x-atom
+  description:
+    - "Add Qwen3.5-397B-A17B MXFP4 single-node MI355X ATOM benchmark"
+    - "Image: rocm/atom:rocm7.2.2_ubuntu24.04_py3.12_pytorch_release_2.10.0_atom0.1.2.post"
+    - "TP=2 and TP=4, concurrency 4-256 for 1k1k and 8k1k sequence lengths"
+    - "Add --gpu-memory-utilization 0.9 to server launch"
+  pr-link: https://github.com/SemiAnalysisAI/InferenceX/pull/1133
+  
+- config-keys:
     - dsv4-fp8-h200-vllm
   description:
     - "Add DeepSeek-V4-Pro vLLM H200 benchmark per https://vllm.ai/blog/deepseek-v4"
@@ -1968,8 +1977,8 @@
     - "Add MiniMax-M2.5 MXFP4 MI355X Atom benchmark (rocm/atom:rocm7.2.2_ubuntu24.04_py3.12_pytorch_release_2.10.0_atom0.1.2.post)"
     - "Single-node sweep: TP1–TP8, 1k/1k and 8k/1k ISL/OSL"
   pr-link: https://github.com/SemiAnalysisAI/InferenceX/pull/1042
- 
-- config-keys:  
+
+- config-keys:
     - dsv4-fp4-gb200-dynamo-vllm
   description:
     - "DSV4-Pro FP4 GB200 dynamo-vLLM disagg against srt-slurm aflowers/vllm-gb200-v0.20.0"
@@ -2044,3 +2053,13 @@
   description:
     - updated sglang container image 
   pr-link: https://github.com/SemiAnalysisAI/InferenceX/pull/1027
+
+- config-keys:
+    - glm5-fp8-mi355x-atom
+  description:
+    - "Update GLM-5 FP8 MI355X ATOM benchmark: new image, add TP=4, set gpu-memory-utilization"
+    - "Image: rocm/atom:rocm7.2.2_ubuntu24.04_py3.12_pytorch_release_2.10.0_atom0.1.2.post"
+    - "Add TP=4, concurrency 4-256 for 1k1k and 8k1k sequence lengths"
+    - "Add --gpu-memory-utilization 0.9 to server launch"
+  pr-link: https://github.com/SemiAnalysisAI/InferenceX/pull/1126
+  
